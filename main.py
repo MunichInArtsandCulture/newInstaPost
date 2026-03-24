@@ -29,12 +29,12 @@ def main():
     # only overwrite if changed (important for git noise)
     if OUTPUT_FILE.exists():
         existing = OUTPUT_FILE.read_text().strip()
-        if existing == shortcode:
+        if existing == embed_url:
             print("No change")
             return
 
-    OUTPUT_FILE.write_text(shortcode)
-    print("Updated shortcode:", shortcode)
+    OUTPUT_FILE.write_text(embed_url)
+    print("Updated shortcode:", embed_url)
 
 
 if __name__ == "__main__":
