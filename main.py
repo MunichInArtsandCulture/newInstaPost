@@ -24,6 +24,7 @@ def get_shortcode():
 
 def main():
     shortcode = get_shortcode()
+    embed_url = f"https://www.instagram.com/p/{shortcode}/embed"
 
     # only overwrite if changed (important for git noise)
     if OUTPUT_FILE.exists():
