@@ -2,7 +2,7 @@ import re
 import requests
 from pathlib import Path
 
-URL = "https://www.instagram.com/munichartsandculture/embed"
+URL = "https://www.instagram.com/[USER_NAME_HERE]/embed"
 OUTPUT_FILE = Path("shortcode.txt")
 
 def get_shortcode():
